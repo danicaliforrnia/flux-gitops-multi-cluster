@@ -9,8 +9,4 @@ spec:
       version: "5.0.0"
   values:
     ingress:
-      hosts:
-        - host: podinfo.app3
-          paths:
-            - path: /
-              pathType: ImplementationSpecific
+      enabled: false
