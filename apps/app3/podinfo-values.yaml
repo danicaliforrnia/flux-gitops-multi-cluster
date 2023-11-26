@@ -4,9 +4,8 @@ metadata:
   name: podinfo
   namespace: podinfo
 spec:
-  chart:
-    spec:
-      version: "5.0.0"
   values:
+    repository: ghcr.io/stefanprodan/podinfo # {"$imagepolicy": "flux-system:podinfo:name"}
+    tag: 5.0.0  # {"$imagepolicy": "flux-system:podinfo:tag"}
     ingress:
       enabled: false
